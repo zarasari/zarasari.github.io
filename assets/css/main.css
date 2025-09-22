@@ -1647,3 +1647,8 @@ button {
 	body.is-preload #footer {
 		opacity: 0;
 	}
+
+/* Custom button spacing */
+.button {
+  margin: 5px 10px;
+}
