@@ -7,6 +7,14 @@
   <link rel="stylesheet" href="assets/css/main.css" />
   <link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
   <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+  <!-- Small tweaks for spacing & button row -->
+  <style>
+    .top-photo { margin-bottom: 18px; }             /* space under photo */
+    .cta-row { display: flex; gap: 12px;            /* CV / GitHub / LinkedIn buttons */
+               justify-content: center; flex-wrap: wrap; }
+    .cta-row .button { min-width: 220px; }          /* consistent width */
+  </style>
 </head>
 <body class="is-preload">
 
@@ -18,24 +26,24 @@
       <div class="content">
         <div class="inner">
           <h1>Zara Sari</h1>
+
           <!-- Profile Picture -->
-          <span class="image main">
+          <span class="image main top-photo">
             <img src="images/MyPhoto.jpg" alt="Zara Sari" style="width:280px; height:280px; object-fit:cover; border-radius:50%;">
           </span>
 
-          <!-- CV Button -->
-          <p>
-            <a href="https://zarasari.github.io/CV_in_PDF2.pdf" target="_blank" rel="noopener" class="button primary">
+          <!-- Call-to-action buttons -->
+          <div class="cta-row">
+            <a href="CV_in_PDF2.pdf" target="_blank" rel="noopener" class="button primary">
               📄 Download My CV
             </a>
-          </p>
-
-          <!-- GitHub Link -->
-          <p>
-            <a href="https://github.com/zarasari" target="_blank" rel="noopener" class="button">
+            <a href="https://github.com/zarasari" target="_blank" rel="noopener" class="button primary">
               💻 View My GitHub
             </a>
-          </p>
+            <a href="https://www.linkedin.com/in/zarasari" target="_blank" rel="noopener" class="button primary">
+              🔗 View My LinkedIn
+            </a>
+          </div>
         </div>
       </div>
 
@@ -96,11 +104,9 @@
       <article id="publications">
         <h2 class="major">Publications</h2>
         <p>
-
-          <a href="25ESV-000290.pdf" target="_blank" rel="noopener">
-  AEB Performance in the UK: A Decade of Development (2017)
-</a>
-      <br>
+          📄 <a href="25ESV-000290.pdf" target="_blank" rel="noopener">
+            AEB Performance in the UK: A Decade of Development (2017)
+          </a><br>
           Presented at the 25th International Technical Conference on the Enhanced Safety of Vehicles (ESV).
         </p>
       </article>
@@ -167,5 +173,3 @@
 
 </body>
 </html>
-
-
